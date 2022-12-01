@@ -81,23 +81,83 @@ select {
 }
 
 h1 {
-    font-size: 2.1em;
-    font-family: monospace
+    font-size: 3em;
+    font-family: monospace;
+    margin-bottom: 2em;
+    font-family: 'JetBrains Mono', monospace; 
 }
 
 body {
     background-color: rgb(41, 19, 62);
     color: rgb(227, 86, 252);
+    margin-top: 3rem;
 }
 
-.inputContainer {
+textarea {
+    width: 500px;
+    height: 150px;
+    border-radius: 3px;
+    outline: 1.5px solid transparent;
+    border: none;
+    background-color: rgba(103, 46, 247, 0.21);
+    color: white;
+}
+
+textarea:hover,
+textarea:active,
+textarea:after,
+textarea:focus-within {
+    outline: 1.5px solid rgb(227, 86, 252);
+    transition: all .15s ease-in-out;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.RFresult {
+.displayNone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.displayFlex {
+    display: flex !important;
+    flex-direction: column;
+    margin-top: 3rem;
+    background-color: rgba(53, 12, 125, 0.471);
+    border-radius: 10px;
+    padding: 2em 2em 5em 2em;
+
+}
+
+.result-container {
     display: none;
+}
+
+.RFresult {
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+}
+
+.btn {
+    margin-top: .5em;
+    outline: none;
+    border: none;
+    padding: .6em 2em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(138, 43, 226);
+}
+
+.btn:hover {
+    background-color: rgb(119, 34, 199);
+    transition: all .22s ease-out;
+    cursor: pointer;
 }

@@ -3,21 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Roboto+Mono:wght@400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>RF num calculator</title>
   </head>
   <body>
-    <div class="inputContainer">
-        <h1>Reference Number Calculator</h1>
-        <div >
-            <form>
-                <label for="RFnum">Enter reference number</label><br/>
-                <textarea id="RFnum" name="RFnum"></textarea>
-                <button id='calculateRefNum' type="submit">Cal</button>
-            </form>
-        <span class='RFresult'></span>
+    <div>
+        <div class="container">
+            <h1>Reference Number Calculator</h1>
+            <div class="inputContainer">
+                <form>
+                    <label for="RFnum">Enter reference number</label><br/>
+                    <textarea id="RFnum" name="RFnum"></textarea><br>
+                    <button class="btn" id='calculateRefNum' type="submit">Cal</button>
+                </form>
+            <div class="result-container displayNone">
+                <span class="resultsText"></span>
+                <span class='RFresult'></span>
+            </div>
+    
+            </div>
         </div>
-    </div>
+        </div>
 
 
     <script src="./calculation.js"></script>
